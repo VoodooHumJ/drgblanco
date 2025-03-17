@@ -90,7 +90,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-  color: #282964;
+  color: #214b97;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -398,7 +398,7 @@ ul.disc li::before {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #282964;
+  background: #214b97;
   position: absolute;
   left: -17px;
   top: 11px;
@@ -407,7 +407,7 @@ ul.disc li::before {
 
 dt {
   margin: 0;
-  color: #282964;
+  color: #214b97;
 }
 
 dd {
@@ -908,7 +908,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
-  -webkit-text-fill-color: #282964;
+  -webkit-text-fill-color: #214b97;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -966,7 +966,7 @@ button.btn--primary,
 input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
-  background: #282964;
+  background: #214b97;
   border-color: #4f4c52;
   color: #FFFFFF;
 }
@@ -1236,7 +1236,7 @@ input::-moz-focus-inner {
 }
 
 .stats-tabs li a:hover {
-  color: #282964;
+  color: #214b97;
 }
 
 .stats-tabs li a em {
@@ -1279,7 +1279,7 @@ input::-moz-focus-inner {
 }
 
 .skill-bars li .progress {
-  background: #282964;
+  background: #214b97;
   position: relative;
   height: 100%;
 }
@@ -1293,7 +1293,7 @@ input::-moz-focus-inner {
   color: #FFFFFF;
   font-size: 1.1rem;
   line-height: 1;
-  background: #282964;
+  background: #214b97;
   padding: .6rem .6rem;
   border-radius: 3px;
 }
@@ -1305,7 +1305,7 @@ input::-moz-focus-inner {
   margin-left: -5px;
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
-  border-top: 5px solid #282964;
+  border-top: 5px solid #;
   content: "";
 }
 
@@ -1434,7 +1434,7 @@ body.menu-is-open {
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #282964;
+  color: #214b97;
   margin-top: 0;
   margin-bottom: 3rem;
   position: relative;
@@ -1727,7 +1727,7 @@ body.menu-is-open {
   margin-bottom: 7.2rem;
   margin-top: 1.2rem;
   padding-right: 140px;
-  color: #282964;
+  color: #214b97;
   position: relative;
 }
 
@@ -1736,7 +1736,7 @@ body.menu-is-open {
   display: block;
   height: 1px;
   width: 110px;
-  background-color: #282964;
+  background-color: #214b97;
   position: absolute;
   top: 50%;
   right: 0;
@@ -1794,11 +1794,11 @@ body.menu-is-open {
 }
 
 .header-nav__list a:hover::before {
-  color: #282964;
+  color: #214b97;
 }
 
 .header-nav__list .current a::before {
-  color: #282964;
+  color: #214b97;
 }
 
 .header-nav__social {
@@ -2211,7 +2211,7 @@ body.menu-is-open {
 
 .home-content__scroll .scroll-link:hover,
 .home-content__scroll .scroll-link:focus {
-  color: #282964;
+  color: #214b97;
 }
 
 .home-content__scroll::after {
@@ -2711,7 +2711,7 @@ html.no-csstransitions .home-content__main {
   font-weight: 700;
   text-align: center;
   color: #FFFFFF;
-  background-color: #282964;
+  background-color: #214b97;
   height: 48px;
   width: 48px;
   line-height: 48px;
@@ -2926,7 +2926,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service__icon {
   float: left;
-  color: #282964;
+  color: #214b97;
   font-size: 4.5rem;
   margin-top: -1.8rem;
 }
@@ -3620,7 +3620,7 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #282964;
+  background-color: #214b97;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
