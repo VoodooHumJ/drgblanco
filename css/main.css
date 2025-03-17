@@ -1957,6 +1957,10 @@ body.menu-is-open {
   .header-menu-toggle {
     right: 60px;
   }
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
 
 }
 
@@ -1980,6 +1984,10 @@ body.menu-is-open {
   .header-nav__list li {
     padding: .6rem 0;
   }
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
 
 }
 
@@ -1995,6 +2003,10 @@ body.menu-is-open {
 
   .header-menu-toggle {
     right: 40px;
+  }
+  .header-logo img {
+    width: 50px;
+    height: 50px;
   }
 
 }
@@ -2013,6 +2025,10 @@ body.menu-is-open {
     top: 27px;
     right: 25px;
   }
+  .header-logo img {
+    width: 50px;
+    height: 50px;
+  }
 
 }
 
@@ -2026,8 +2042,8 @@ body.menu-is-open {
   }
 
   .header-logo img {
-    width: 150px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
 
   .header-nav {
