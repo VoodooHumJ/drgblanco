@@ -81,7 +81,7 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.941;
-  color: rgba(255, 255, 255, 0.3);
+  color: #9c9c9c;
   margin: 0;
   padding: 0;
 }
@@ -191,7 +191,7 @@ p.lead {
   font-size: 2.4rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.2);
+  color: #9c9c9c;
 }
 
 @media only screen and (max-width:1200px) {
@@ -3620,7 +3620,7 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #214b97;
+  background-color: #282964;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
