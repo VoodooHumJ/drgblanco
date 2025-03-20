@@ -2173,7 +2173,7 @@ body.menu-is-open {
   height: 7.2rem !important;
   line-height: 6.8rem !important;
   margin-right: 0;
-  position: absolute;
+  position: center;
 }
 
 .home-content__button .btn:first-child {
@@ -3418,7 +3418,7 @@ html.no-csstransitions .home-content__main {
 .s-contact {
   padding-top: 5rem;
   padding-bottom: 1rem;
-  background-color: #282969;
+  background-color: #214b97;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
@@ -3579,24 +3579,27 @@ html.no-csstransitions .home-content__main {
 
   .contact-social {
     font-size: 3.2rem;
+    
   }
+   
 
 }
 
 @media only screen and (max-width:600px) {
   .s-contact {
-    padding-top: 12rem;
-    padding-bottom: 13.2rem;
+    padding-top: 3rem;
+    padding-bottom: 3.2rem;
   }
 
   .contact-main {
     font-size: 2.1rem;
-    margin-top: 7.2rem;
+    margin-top: 3rem;
   }
 
   .contact-social {
     font-size: 3rem;
   }
+   
 
 }
 
@@ -3608,6 +3611,8 @@ html.no-csstransitions .home-content__main {
   .contact-email a {
     font-size: 3rem;
   }
+
+   
 
 }
 
@@ -3625,6 +3630,7 @@ html.no-csstransitions .home-content__main {
     margin: 3rem 0 0 0;
     font-size: 2.4rem;
   }
+   
 
 }
 
@@ -3636,7 +3642,7 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #282964;
+  background-color: #214b97;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
@@ -3678,13 +3684,28 @@ footer a {
     display: block;
   }
 
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .ss-copyright span::after {
     display: none;
+  }
+
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
 @media only screen and (max-width:400px) {
   .cl-copyright span {
     font-size: 15px;
+  }
+
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 }
