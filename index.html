@@ -42,9 +42,6 @@
     ================================================== -->
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
     <link rel="icon" href="icon.png" type="image/x-icon">
-    
-    <!-- Font Awesome (versión actualizada) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Schema.org structured data for Doctor -->
     <script type="application/ld+json">
@@ -93,16 +90,55 @@
             </a>
         </div> <!-- end header-logo -->
 
-        <!-- end header-nav -->
+        <nav class="header-nav">
 
-        
+            <a href="#0" class="header-nav__close" title="close"><span>Cerrar</span></a>
+
+            <h3>Menú</h3>
+
+            <div class="header-nav__content">
+                
+                <ul class="header-nav__list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Acerca del Dr. Guido Blanco P.</a></li>
+                    <li><a href="spine.html">Spine Bolivia</a></li>
+                    <li><a href="patologias.html">Patologías de columna</a></li>
+                    <li><a href="services.html">Servicios especializados</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+    
+                <p>Con años de experiencia en cirugía de columna, me especializo en escoliosis y deformidades vertebrales. Mi compromiso es ofrecer tratamientos de vanguardia para mejorar la calidad de vida de mis pacientes.</p>
+    
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100082981796517" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i><span></span></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/59178853110?text=Hola%20Dr.%20Blanco%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i><span></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/drguidoblanco/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><span></span></a>
+                    </li>            
+                    <li>
+                        <a href="https://maps.app.goo.gl/aRyDP4VR9oeA8CzC6" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span></span></a>
+                    </li>
+                    
+                </ul>
+
+            </div> <!-- end header-nav__content -->
+
+        </nav> <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-icon"></span>
+        </a>
 
     </header> <!-- end s-header -->
 
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/slide-02.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/slide-042.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="grid-overlay">
             <div></div>
@@ -120,13 +156,12 @@
                 Cirugía de columna y escoliosis.
                 </h3>
 
-                <h4 style="font-family: 'Nunito', sans-serif; font-weight: 400; letter-spacing: 0.5px;">
-                    Pronto, un espacio con soluciones avanzadas en cirugía de columna.
-                </h4>
-
                 
 
-                <div class="home-content__button" style="display: flex; justify-content: center; width: 100%;">
+                <div class="home-content__button">
+                    <a href="#about" class="smoothscroll btn btn--primary btn--large">
+                        Acerca del Dr. Blanco
+                    </a>
                     <a href="https://wa.me/59178853110" class="btn btn--large" target="_blank" rel="noopener noreferrer">
                         Reservar Cita
                     </a>
@@ -134,21 +169,22 @@
 
             </div> <!-- end home-content__main -->
 
-            <div class="home-content__scroll">
-                
-            </div>
+            
 
         </div> <!-- end home-content -->
 
         <ul class="home-social">
             <li>
-                <a href="https://www.facebook.com/profile.php?id=100082981796517" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
+                <a href="https://www.facebook.com/profile.php?id=100082981796517" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/guido-blanco-prince-92142916b/?originalSubdomain=bo" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span>linkedin</span></a>
+                <a href="https://wa.me/59178853110?text=Hola%20Dr.%20Blanco%2C%20me%20gustar%C3%ADa%20agendar%20una%20consulta" target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i><span>WhatsApp</span></a>
             </li>
             <li>
-                <a href="https://www.tiktok.com/@drguidoblanco" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i><span>TikTok</span></a>
+                <a href="https://www.instagram.com/drguidoblanco/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>            
+            <li>
+                <a href="https://maps.app.goo.gl/aRyDP4VR9oeA8CzC6" target="_blank"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>Ubicación</span></a>
             </li>
             
         </ul> <!-- end home-social -->
@@ -158,79 +194,163 @@
 
     <!-- about
     ================================================== -->
-    
+    <section id="about" class="s-about target-section">
 
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-    
-
-
-    <!-- contact
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-            <div class="grid-overlay">
-                <div></div>
-            </div>
-
-        <div class="row section-header narrow" data-aos="fade-up">
+        <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Contacto</h3>
-                
+                <h3 class="subhead"> Acerca del Dr. Blanco</h3>
+                <h1 class="display-1">
+                    Soy Guido Blanco, especialista en cirugía de corrección de escoliosis y deformidades de la columna. <br>
+                    Mi compromiso es ofrecerte el mejor tratamiento para problemas relacionados con la columna vertebral, siempre priorizando su bienestar y calidad de vida.
+                </h1>
             </div>
         </div> <!-- end section-header -->
 
-        <div class="row contact-main" data-aos="fade-up">
+        <div class="row bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <p class="contact-email">
-                    <a href="mailto:#0">info@guidoblanco.com</a>
-                </p>
-                <p class="contact-address">
-                    <a href="https://www.google.com/maps?q=Miraflores,+Calle+República+Dominicana,+Edificio+Medical+Center,+Planta+Baja,+Consultorio+2,+La+Paz,+Bolivia" 
-                       target="_blank" 
-                       style="text-decoration: none; color: inherit;"
-                       title="Ver ubicación en Google Maps">
-                        Miraflores, Calle República Dominicana<br>
-                        Edificio Medical Center, Planta Baja, Consultorio 2<br>
-                        La Paz, Bolivia
-                    </a>
-                </p>
-                <p class="contact-numbers">
-                    <a href="https://wa.me/59178853110" target="_blank" style="text-decoration: none; color: inherit;" title="Enviar mensaje por WhatsApp">
-                        +59178853110
-                    </a>
-                </p>
+                <p class="lead">
+                    En el mundo de la ortopedia y traumatología, mi pasión es brindar un cuidado integral y personalizado a cada paciente. <br>
+                    Con años de experiencia, he trabajado con pacientes de todas las edades y condiciones.<br>
+                    Mi objetivo es brindar un servicio de calidad y atención personalizada a cada paciente.<br>
 
-                <ul class="contact-social">
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100082981796517" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f" aria-hidden="true"></i><span></span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/guido-blanco-prince-92142916b/?originalSubdomain=bo" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i><span></span></a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/@drguidoblanco" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok" aria-hidden="true"></i><span></span></a>
-                    </li>
-                    
-                </ul>
+
+                </p>
             </div>
-        </div>
+        </div> <!-- end about-desc -->
 
-    </section> <!-- end s-contact -->
+         <!-- end row -->
+
+    </section> <!-- end s-about -->
 
 
-    <!-- footer
+    <!-- services
     ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full ss-copyright">
-                <span>© Dr. Guido Blanco P. 2025</span> 
-                <span>Desarrollado por HumCH.C</span>
+    <section id='services' class="s-services target-section darker">
+
+        <div class="row section-header bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Servicios y procedimientos</h3>
+                <h1 class="display-1">
+                Años de experiencia en la cirugía de columna y escoliosis me hace posible ofrecerte un servicio de calidad y atención personalizada a cada paciente. <br>
+                
+                </h1>
+            </div>
+        </div> 
+        <div class="row bit-narrow" data-aos="fade-up">
+            <div class="col-full">
+                <p class="lead">
+                    Entre mis servicios incluyo:
+                </p>
             </div>
         </div>
-    </footer>
 
+        <div class="row bit-narrow services block-1-2 block-tab-full">
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Cirugías de corrección de escoliosis y deformidades de la columna.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Evaluación y diagnóstico de escoliosis y deformidades vertebrales.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>  
+                <div class="item-service__text">
+                    <h3 class="item-title">Tratamiento no quirúrgico de dolor de espalda y cuello.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Tratamiento de hernias de disco.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Tratamiento de fracturas vertebrales.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Corrección de cifosis y otras curvaturas anómalas de la columna.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Abordaje de enfermedades degenerativas de la columna.</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block item-service" data-aos="fade-up">
+                <div class="item-service__icon"><i class="fas fa-hospital"></i></div>
+                <div class="item-service__text">
+                    <h3 class="item-title">Atención a pacientes pediátricos con escoliosis u otros problemas de columna..</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    
+                    </p>
+                </div>
+            </div>
+
+        </div> <!-- end services -->
+
+    </section> <!-- end s-services -->
+
+
+   
+
+    
+
+
+    
 
    
 

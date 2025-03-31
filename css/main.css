@@ -268,7 +268,7 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   line-height: 1.5;
@@ -939,8 +939,8 @@ input[type="button"] {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #c5c5c5;
-  border: .2rem solid #c5c5c5;
+  background-color: #23272b;
+  
 }
 
 .btn:hover,
@@ -953,8 +953,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  background-color: #b8b8b8;
-  border-color: #b8b8b8;
+  background-color: #23272b;
+  
   color: #000000;
   outline: 0;
 }
@@ -967,7 +967,7 @@ input[type="submit"].btn--primary,
 input[type="reset"].btn--primary,
 input[type="button"].btn--primary {
   background: #04080e;
-  border-color: #4f4c52;
+  border-color: #23272b;
   color: #FFFFFF;
 }
 
@@ -982,7 +982,7 @@ input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
   background: #0f0f0f;
-  border-color: #4f4c52;
+  border-color: #23272b;
 }
 
 /* button modifiers
@@ -1389,6 +1389,9 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
+.s-services {
+  margin-top: -10rem;
+}
 
 /* ===================================================================
  * # reusable and common theme styles
@@ -1418,9 +1421,9 @@ body.menu-is-open {
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 4.6rem;
+  font-size: 4rem;
   line-height: 1.5;
   letter-spacing: -0.03rem;
   margin-top: 0;
@@ -1428,14 +1431,14 @@ body.menu-is-open {
 }
 
 .subhead {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
   color: #214b97;
-  margin-top: 0;
+  margin-top: 8rem;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -1487,7 +1490,7 @@ body.menu-is-open {
   right: 0;
   max-width: 1200px;
   width: 89%;
-  height: 100%;
+  height: 100vh;
   opacity: .5;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -1521,6 +1524,55 @@ body.menu-is-open {
 .grid-overlay > div {
   left: 50%;
 }
+
+
+
+.grid-overlay2 {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  max-width: 1200px;
+  width: 100%;
+  height: 40vh;
+  opacity: .5;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -ms-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
+  z-index: 3;
+}
+
+.grid-overlay2 > div,
+.grid-overlay2::before,
+.grid-overlay2::after {
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 1px;
+}
+
+.grid-overlay2::before {
+  content: "";
+  left: 25%;
+}
+
+.grid-overlay2::after {
+  content: "";
+  right: 25%;
+}
+
+.grid-overlay2 > div {
+  left: 50%;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -1718,7 +1770,7 @@ body.menu-is-open {
 
 .header-nav h3 {
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -1761,9 +1813,9 @@ body.menu-is-open {
 }
 
 .header-nav__list {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   line-height: 1.286;
   margin: 0 0 4.2rem 0;
   padding: 0;
@@ -1785,7 +1837,7 @@ body.menu-is-open {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.25);
   -webkit-transition: all 0.5s ease-in-out;
@@ -1897,7 +1949,7 @@ body.menu-is-open {
   width: 48px;
   height: 45px;
   line-height: 45px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -2133,7 +2185,7 @@ body.menu-is-open {
 }
 
 .home-content h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 10rem;
   line-height: 1;
@@ -2188,14 +2240,14 @@ body.menu-is-open {
 
 .home-content__button .btn:not(.btn--primary) {
   background-color: #214b97;
-  border-color: #13161b;
+  
   color: #FFFFFF;
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: #080a0c;
-  border-color: #080a0c;
+  background-color: #23272b;
+  
 }
 
 /* ------------------------------------------------------------------- 
@@ -2698,7 +2750,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  padding-top: 18rem;
+  padding-top: 6rem;
   padding-bottom: 18rem;
   background-color: #121212;
   position: relative;
@@ -2847,7 +2899,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:1000px) {
   .s-about {
-    padding-top: 15rem;
+    padding-top: 4rem;
     padding-bottom: 15rem;
   }
 
@@ -2860,7 +2912,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width:600px) {
   .s-about {
-    padding-top: 12rem;
+    padding-top: 4rem;
     padding-bottom: 12rem;
   }
 
@@ -2908,8 +2960,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-services {
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   position: relative;
 }
 
@@ -2947,6 +2999,51 @@ html.no-csstransitions .home-content__main {
   margin-top: -1.8rem;
 }
 
+
+
+/* ===================================================================
+ * # laboral
+ *
+ * ------------------------------------------------------------------- */
+ .s-laboral {
+  padding-top: 1rem;
+  padding-bottom: 18rem;
+  position: relative;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## services list
+ * ------------------------------------------------------------------- */
+.services {
+  margin-top: 9rem;
+}
+
+.item-service {
+  margin-bottom: .9rem;
+}
+
+.item-service h3 {
+  margin-top: 0;
+}
+
+.item-service:nth-child(2n+1) {
+  padding-right: 50px;
+}
+
+.item-service:nth-child(2n+2) {
+  padding-left: 50px;
+}
+
+.item-service__text {
+  margin-left: 7.2rem;
+}
+
+.item-service__icon {
+  float: left;
+  color: #214b97;
+  font-size: 4.5rem;
+  margin-top: -1.8rem;
+}
 /* ------------------------------------------------------------------- 
  * responsive:
  * services
@@ -3416,12 +3513,20 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-contact {
-  padding-top: 5rem;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #214b97;
   color: rgba(255, 255, 255, 0.6);
   text-align: center;
   position: relative;
+}
+
+.s-contact1 {
+  background: radial-gradient(circle at 50% 50%, #5de0e6 0%, #004aad 100%);
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  position: relative;
+  padding-bottom: 4rem;
 }
 
 .s-contact a {
@@ -3451,7 +3556,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-main {
-  font-size: 3.3rem;
+  font-size: 3rem;
   line-height: 1.636;
   margin-top: 9rem;
 }
@@ -3461,11 +3566,11 @@ html.no-csstransitions .home-content__main {
 }
 
 .contact-main .contact-email {
-  margin-bottom: 3.6rem;
+  margin-bottom: 3rem;
 }
 
 .contact-email a {
-  font-size: 9rem;
+  font-size: 6rem;
   font-weight: 700;
   line-height: 1.2;
   color: #FFFFFF;
@@ -3709,3 +3814,105 @@ footer a {
     padding-bottom: 2rem;
   }
 }
+
+/* Logos Section
+ * -------------------------------------------------- */
+.logos-section {
+    padding: 4rem 0;
+}
+
+.logos-section h3.subhead {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+}
+
+.logos-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logos-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.logos-row:last-child {
+    margin-bottom: 0;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-item:hover {
+    transform: translateY(-5px);
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+    transition: filter 0.3s ease;
+}
+
+.logo-item:hover img {
+    filter: grayscale(0%);
+}
+
+.logo-item img[src*="4.png"] {
+    filter: invert(1);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+    .logos-row {
+        gap: 2rem;
+    }
+    
+    .logo-item {
+        width: 180px;
+        height: 90px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .logos-row {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .logo-item {
+        width: 160px;
+        height: 80px;
+    }
+    
+    .logos-row.top .logo-item:nth-child(3) {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logos-container {
+        padding: 0 1rem;
+    }
+    
+    .logo-item {
+        width: 140px;
+        height: 70px;
+    }
+}
+
