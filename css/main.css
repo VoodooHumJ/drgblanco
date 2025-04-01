@@ -3747,8 +3747,8 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: rgba(255, 255, 255, 0.6);
-  background-color: #214b97;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #121212;
+ 
   text-align: center;
   position: relative;
 }
@@ -3915,4 +3915,90 @@ footer a {
         height: 70px;
     }
 }
+
+.cookie-container {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #005aa7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cookie-container button {
+  background: #ffffff;
+  color: #005aa7;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cookie-container button:hover {
+  background: #f1f1f1;
+}
+@media (max-width: 600px) {
+  .cookie-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .cookie-container p {
+    font-size: 14px;
+  }
+
+  .cookie-container button {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+.cookie-container button {
+  background: #ffffff;
+  color: #005aa7;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cookie-container button:hover {
+  background: #f1f1f1;
+}
+
+.next-button {
+  display: inline-flex;
+  align-items: right;
+  gap: 8px;
+  background: #005aa7;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.next-button:hover {
+  background: #004080;
+  transform: scale(1.05);
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.next-button:hover .arrow {
+  transform: translateX(5px);
+}
+
 

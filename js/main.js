@@ -255,5 +255,34 @@
         ssAOS();
 
     })();
-
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const cookieBanner = document.getElementById("cookie-banner");
+        const acceptButton = document.getElementById("accept-cookies");
+      
+        // Función para obtener una cookie
+        function getCookie(name) {
+          const cookies = document.cookie.split("; ");
+          for (let cookie of cookies) {
+            let [cookieName, cookieValue] = cookie.split("=");
+            if (cookieName === name) {
+              return cookieValue;
+            }
+          }
+          return null;
+        }
+      
+        // Verificar si la cookie ya está aceptada
+        if (getCookie("cookiesAceptadas") === "true") {
+          cookieBanner.style.display = "none"; // Ocultar banner si ya se aceptó
+        }
+      
+        // Evento para aceptar cookies
+        acceptButton.addEventListener("click", function () {
+          document.cookie = "cookiesAceptadas=true; path=/; max-age=31536000"; // 1 año de duración
+          cookieBanner.style.display = "none"; // Ocultar banner
+        });
+    });
+      
+      
 })(jQuery);
