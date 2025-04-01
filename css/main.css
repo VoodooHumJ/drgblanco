@@ -2978,6 +2978,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service h3 {
   margin-top: 0;
+  font-size: 18px;
 }
 
 .item-service:nth-child(2n+1) {
@@ -2995,7 +2996,7 @@ html.no-csstransitions .home-content__main {
 .item-service__icon {
   float: left;
   color: #214b97;
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin-top: -1.8rem;
 }
 
@@ -3101,7 +3102,10 @@ html.no-csstransitions .home-content__main {
   }
 
   .services .service-icon {
-    font-size: 4.2rem;
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+
     float: none;
     margin-top: 0;
   }
