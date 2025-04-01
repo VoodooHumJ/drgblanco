@@ -1741,7 +1741,7 @@ body.menu-is-open {
   height: 100%;
   width: 50%;
   background: #0C0C0C;
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.671);
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
@@ -1867,7 +1867,7 @@ body.menu-is-open {
 }
 
 .header-nav__social li a {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.705);
 }
 
 .header-nav__social li a:hover,
