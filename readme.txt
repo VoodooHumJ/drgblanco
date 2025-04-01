@@ -16,7 +16,7 @@ LICENCIA:
 Modificaciones y contenido médico son propiedad del Dr. Guido Blanco.
 
 CONTACTO:
-HoJDEV
+HoDEV
 Teléfono/WhatsApp: +591 69964880
 
 
