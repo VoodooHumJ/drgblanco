@@ -75,15 +75,16 @@ body {
 }
 
 body {
-  background: #121212;
+  background: var(--background-color, #121212);
   font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
   line-height: 1.941;
-  color: #9c9c9c;
+  color: var(--text-color, #9c9c9c);
   margin: 0;
   padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ------------------------------------------------------------------- 
