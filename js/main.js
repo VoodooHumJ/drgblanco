@@ -1,5 +1,5 @@
 /* ===================================================================
- * Dr. Guido Blanco v1
+ * Dr. Carlos Escobar v1
  *  16.03.2025
  *
  * ------------------------------------------------------------------- */
@@ -283,6 +283,24 @@
           cookieBanner.style.display = "none"; // Ocultar banner
         });
     });
-      
+
+    // Funcionalidad del acordeón de Preguntas Frecuentes
+    document.addEventListener("DOMContentLoaded", function() {
+        const accordionButtons = document.querySelectorAll('.accordion-item button');
+        
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const isExpanded = button.getAttribute('aria-expanded') === 'true';
+                button.setAttribute('aria-expanded', !isExpanded);
+                
+                const content = button.nextElementSibling;
+                if (!isExpanded) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = '0';
+                }
+            });
+        });
+    });
       
 })(jQuery);

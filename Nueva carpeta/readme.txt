@@ -1,8 +1,8 @@
-Dr. Guido Blanco - Sitio Web Profesional
+Dr. Carlos Escobar - Sitio Web Profesional
 =========================================
 
 DESCRIPCIÓN:
-Sitio web profesional del Dr. Guido Blanco, especialista en cirugía de columna y escoliosis. 
+Sitio web profesional del Dr. Carlos Escobar, especialista en cirugía de columna y escoliosis. 
 Incluye información sobre servicios médicos, experiencia profesional y datos de contacto.
 
 TECNOLOGÍAS UTILIZADAS:
@@ -13,7 +13,7 @@ TECNOLOGÍAS UTILIZADAS:
 - Plugin AOS (Animate On Scroll)
 
 LICENCIA:
-Modificaciones y contenido médico son propiedad del Dr. Guido Blanco.
+Modificaciones y contenido médico son propiedad del Dr. Carlos Escobar.
 
 CONTACTO:
 HoDEV

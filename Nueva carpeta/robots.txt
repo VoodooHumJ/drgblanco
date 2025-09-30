@@ -13,4 +13,4 @@ User-agent: Googlebot-Mobile
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.guidoblanco.com/sitemap.xml
+Sitemap: https://www.CarlosEscobar.com/sitemap.xml

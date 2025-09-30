@@ -1,6 +1,6 @@
 /* =================================================================== 
  *
- *  Dr. Guido Blanco v1
+ *  Dr. Carlos Escobar v1
  *  16.03.2025
  *  ------------------------------------------------------------------
  *
@@ -1727,8 +1727,8 @@ body.menu-is-open {
 }
 
 .header-logo img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 /* ------------------------------------------------------------------- 
@@ -4005,5 +4005,110 @@ footer a {
 .next-button:hover .arrow {
   transform: translateX(5px);
 }
+/* Estilos para la sección de Preguntas Frecuentes (FAQ) */
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
 
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-item button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 20px;
+    border: none;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-item button:hover {
+    background-color: #eee;
+}
+
+.accordion-item button[aria-expanded='true'] {
+    background-color: #e0e0e0;
+}
+
+.accordion-title {
+    flex: 1;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    position: relative;
+}
+
+.icon::before,
+.icon::after {
+    content: '';
+    position: absolute;
+    background-color: #333;
+}
+
+.icon::before {
+    width: 10px;
+    height: 2px;
+    top: 9px;
+    left: 5px;
+}
+
+.icon::after {
+    width: 2px;
+    height: 10px;
+    top: 5px;
+    left: 9px;
+}
+
+.accordion-item button[aria-expanded='true'] .icon::after {
+    display: none;
+}
+
+.accordion-content {
+    padding: 0 20px;
+    background-color: #fff;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion-content p {
+    margin: 0;
+    padding-bottom: 15px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Estilos para la imagen con zoom */
+.img-zoom-container {
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}
+
+.img-zoom-container img {
+    transition: transform 0.3s ease; /* Suaviza la transición del zoom */
+}
+
+.img-zoom-container img:hover {
+    transform: scale(1.05); /* Aplica un zoom del 5% al pasar el ratón */
+}
 
