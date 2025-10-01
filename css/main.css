@@ -4112,3 +4112,15 @@ footer a {
     transform: scale(1.05); /* Aplica un zoom del 5% al pasar el ratón */
 }
 
+/* Estilos para el botón flotante de WhatsApp */
+
+
+/* Estilos para el zoom del logo */
+.header-logo img {
+    transition: transform 0.3s ease; /* Suaviza la transición del zoom */
+}
+
+.header-logo img:hover {
+    transform: scale(1.1); /* Aplica un zoom del 10% al pasar el ratón */
+}
+
