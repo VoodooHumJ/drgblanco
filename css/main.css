@@ -4124,3 +4124,12 @@ footer a {
     transform: scale(1.1); /* Aplica un zoom del 10% al pasar el ratón */
 }
 
+/* Estilos para el zoom de los botones */
+.home-content__button .btn {
+    transition: transform 0.3s ease; /* Suaviza la transición del zoom */
+}
+
+.home-content__button .btn:hover {
+    transform: scale(1.015); /* Aplica un zoom del 5% al pasar el ratón */
+}
+
