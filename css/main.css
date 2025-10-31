@@ -3018,6 +3018,10 @@ html.no-csstransitions .home-content__main {
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
+  background-image: linear-gradient(to top, rgba(0, 90, 200, 0.1) 0%, transparent 70%); /* Degradado en la parte inferior */
+  background-size: 100% 100%; /* Asegura que el degradado cubra todo el fondo */
+  background-position: center bottom; /* Centra el degradado en la parte inferior */
+  background-repeat: no-repeat;
 }
 
 
@@ -3863,6 +3867,7 @@ footer {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  
   font-size: 19vw; /* Tamaño de fuente muy grande y responsivo */
   font-weight: 1000; /* Ajustado para una fuente más ancha */
   font-family: 'Impact', sans-serif; /* Cambiado a fuente Impact */
@@ -3874,6 +3879,7 @@ footer {
   opacity: 0.3; /* Ajustado para que sea más visible */
   pointer-events: none; /* Para que no interfiera con los clics */
   z-index: 1; /* Detrás del contenido */
+  
 
   /* Degradado de texto */
   background: linear-gradient(to right, #00e1ff, #0092ff, #005ac8);
@@ -3902,6 +3908,11 @@ footer a {
 /* ------------------------------------------------------------------- 
  * ## copyright
  * ------------------------------------------------------------------- */
+.ss-copyright {
+  padding-top: 25%;
+  margin-top: 20rem;
+
+}
 .ss-copyright span {
   font-size: 16px;
   display: inline-block;
@@ -3952,7 +3963,7 @@ footer a {
   }
 
   .footer {
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
   }
 }
@@ -4143,98 +4154,242 @@ footer a {
   transform: translateX(5px);
 }
 /* Estilos para la sección de Preguntas Frecuentes (FAQ) */
+
+
+
+
+/* Variables CSS para fácil personalización */
+:root {
+  --accordion-bg: #ffffff00;
+  --accordion-border: #e5e7eb;
+  --accordion-hover: #1f2124;
+  --accordion-active: #000308;
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --accent-color: #3b83f63f;
+  --transition-speed: 0.3s;
+  
+  --spacing-unit: 1rem;
+}
+
+/* Contenedor principal */
+.row {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.bit-narrow {
+  max-width: 900px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+/* Estilos del acordeón */
 .accordion {
-    max-width: 800px;
-    margin: 0 auto;
-    border: 1px solid #ddd;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+   
+   
+   
+  
 }
 
 .accordion-item {
-    border-bottom: 1px solid #ddd;
+  background: var(--accordion-bg);
+  border: 0px solid var(--accordion-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition-speed) ease;
+   
 }
 
-.accordion-item:last-child {
-    border-bottom: none;
+.accordion-item:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+/* Botón del acordeón */
 .accordion-item button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 18px 20px;
-    border: none;
-    background-color: #f7f7f7;
-    color: #333;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: left;
-    transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color var(--transition-speed) ease;
+  font-family: inherit;
 }
 
 .accordion-item button:hover {
-    background-color: #eee;
+  background: var(--accordion-hover);
 }
 
-.accordion-item button[aria-expanded='true'] {
-    background-color: #e0e0e0;
+.accordion-item button[aria-expanded="true"] {
+  background: var(--accordion-active);
 }
 
+.accordion-item button:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: -2px;
+}
+
+/* Título del acordeón */
 .accordion-title {
-    flex: 1;
+  color: var(--text-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.6;
+  flex: 1;
 }
 
+/* Icono */
 .icon {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    border: 1px solid #333;
-    border-radius: 50%;
-    position: relative;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform var(--transition-speed) ease;
 }
 
 .icon::before,
 .icon::after {
-    content: '';
-    position: absolute;
-    background-color: #333;
+  content: '';
+  position: absolute;
+  background: var(--text-secondary);
+  transition: transform var(--transition-speed) ease;
 }
 
 .icon::before {
-    width: 10px;
-    height: 2px;
-    top: 9px;
-    left: 5px;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  transform: translateY(-50%);
 }
 
 .icon::after {
-    width: 2px;
-    height: 10px;
-    top: 5px;
-    left: 9px;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
 }
 
-.accordion-item button[aria-expanded='true'] .icon::after {
-    display: none;
+button[aria-expanded="true"] .icon::after {
+  transform: translateX(-50%) rotate(90deg);
+  opacity: 0;
 }
 
+button[aria-expanded="true"] .icon {
+  transform: rotate(180deg);
+}
+
+/* Contenido del acordeón */
 .accordion-content {
-    padding: 0 20px;
-    background-color: #fff;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--transition-speed) ease, padding var(--transition-speed) ease;
+}
+
+button[aria-expanded="true"] + .accordion-content {
+  max-height: 500px;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .accordion-content p {
-    margin: 0;
-    padding-bottom: 15px;
-    line-height: 1.6;
-    color: #666;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 0;
 }
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .row {
+    padding: 0 0.75rem;
+  }
+  
+  .accordion {
+    gap: 0.75rem;
+  }
+  
+  .accordion-item button {
+    padding: 1.25rem 1rem;
+  }
+  
+  .accordion-title {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  button[aria-expanded="true"] + .accordion-content {
+    padding: 0 1rem 1.25rem 1rem;
+    max-height: 600px;
+  }
+  
+  .accordion-content p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion-item button {
+    padding: 1rem 0.875rem;
+    gap: 0.75rem;
+  }
+  
+  .accordion-title {
+    font-size: 0.9375rem;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  button[aria-expanded="true"] + .accordion-content {
+    padding: 0 0.875rem 1rem 0.875rem;
+  }
+  
+  .accordion-content p {
+    font-size: 0.875rem;
+  }
+}
+
+/* Animación suave de entrada */
+@media (prefers-reduced-motion: no-preference) {
+  .accordion-item {
+    animation: fadeIn 0.5s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
 
 /* Estilos para la imagen con zoom */
 .img-zoom-container {
