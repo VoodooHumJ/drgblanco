@@ -183,7 +183,13 @@
                 </h2>
 
                 <h3 class="home-content__text">
-                    Urólogo con Alta Especialidad en Urología Oncológica y Cirugía Láser.
+                    <div class="fade-container">
+                        <span class="fade-text active" id="text1">Urólogo con Alta Especialidad en Urología Oncológica y Cirugía Láser.</span>
+                        <span class="fade-text" id="text2">Especialista en tratamiento de cáncer urológico con <br>tecnología láser holmium [ HoLEP ] de última generación.</span>
+                        <span class="fade-text" id="text3">Pionero en técnicas quirúrgicas mínimamente invasivas para patologías urológicas.</span>
+                        <span class="fade-text" id="text4">Experto en el manejo integral de la litiasis urinaria con tecnología láser.</span>
+                        <span class="fade-text" id="text5">Dedicado a la salud masculina, ofreciendo soluciones avanzadas y personalizadas.</span>
+                    </div>
                 </h3>
 
                 <div class="home-content__button">
@@ -336,7 +342,7 @@
                     <i class="fas fa-stethoscope"></i>
                 </div>
                 <div class="item-service__text">
-                    <h3 class="item-title">Nefrectomía parcial y radical mínimamente invasiva..</h3>
+                    <h3 class="item-title">Nefrectomía parcial y radical mínimamente invasiva.</h3>
                      
                 </div>
             </div>
@@ -451,6 +457,29 @@
                 text-align: center;
             }
         }
+        
+        /* Estilos para el efecto de desvanecimiento */
+        .fade-text {
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            position: absolute;
+            width: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .fade-text.active {
+            opacity: 1;
+        }
+        
+        /* Contenedor para mantener el espacio */
+        .fade-container {
+            position: relative;
+            height: 1.2em;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
     </style>
 
    
@@ -475,5 +504,32 @@
     
     <!-- WhatsApp Floating Button -->
     
+    <script>
+        // Efecto de desvanecimiento automático para el texto
+        function initTextFade() {
+            const texts = [
+                document.getElementById('text1'),
+                document.getElementById('text2'),
+                document.getElementById('text3'),
+                document.getElementById('text4'),
+                document.getElementById('text5')
+            ];
+            
+            if (texts.some(text => !text)) return;
+            
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                texts[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % texts.length;
+                setTimeout(() => {
+                    texts[currentIndex].classList.add('active');
+                }, 1500); // Esperar a que termine el fade out
+            }, 5000); // Cambiar cada 5 segundos
+        }
+        
+        // Iniciar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', initTextFade);
+    </script>
 
 </body>
