@@ -63,8 +63,8 @@ html {
 }
 
 ::selection {
-  color: white;        /* Color del texto seleccionado */
-  background: #00677f;    /* Color de fondo del texto seleccionado */
+  color: rgb(10, 10, 10);        /* Color del texto seleccionado */
+  background: #bdd6e6;    /* Color de fondo del texto seleccionado */
 }
 
 
@@ -82,7 +82,7 @@ body {
 
 body {
   background: var(--background-color, #121212);
-  font-family: "Sylfaen", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
   font-weight: normal;
@@ -119,7 +119,7 @@ a:active {
  * 
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Muller", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   color: #FFFFFF;
   text-rendering: optimizeLegibility;
@@ -195,12 +195,12 @@ p img {
 }
 
 p.lead {
-  font-family: "Muller", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 1.625;
   margin-bottom: 3.6rem;
-  color: #9c9c9c;
+  color: #ffffff;
 }
 
 @media only screen and (max-width:1200px) {
@@ -234,13 +234,13 @@ b {
 
 em,
 i {
-  font-family: "Muller", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-style: italic;
 }
 
 strong,
 b {
-  font-family: "Sylfaen", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
 }
 
@@ -261,7 +261,7 @@ blockquote:before {
   line-height: 0px;
   margin: 0;
   color: rgba(255, 255, 255, 0.15);
-  font-family: "Muller", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   position: absolute;
   top: 3.6rem;
   left: 0;
@@ -277,7 +277,7 @@ blockquote p {
 
 blockquote cite {
   display: block;
-  font-family: "Sylfaen", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.4rem;
   font-style: normal;
   line-height: 1.5;
@@ -294,7 +294,7 @@ blockquote cite a:visited {
 }
 
 abbr {
-  font-family: "Sylfaen", serif;
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-variant: small-caps;
   text-transform: lowercase;
@@ -1442,13 +1442,13 @@ body.menu-is-open {
 }
 
 .subhead {
-  font-family: "Sylfaen", serif;  
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.333;
   text-transform: uppercase;
   letter-spacing: .25rem;
-  color: #a50034;
+  color: #bdd6e6;
   margin-top: 8rem;
   margin-bottom: 3rem;
   position: relative;
@@ -1810,7 +1810,7 @@ body.menu-is-open {
 
 .header-nav h3 {
   display: inline-block;
-  font-family: "Sylfaen", serif;  
+  font-family: "Nunito Sans", sans-serif;  
   font-weight: 700;
   font-size: 12px;
   line-height: 1.25;
@@ -1853,7 +1853,7 @@ body.menu-is-open {
 }
 
 .header-nav__list {
-  font-family: "Sylfaen", serif;  
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.286;
@@ -1877,7 +1877,7 @@ body.menu-is-open {
   display: block;
   content: counter(ctr, decimal-leading-zero) ".";
   counter-increment: ctr;
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.25);
   -webkit-transition: all 0.5s ease-in-out;
@@ -1989,7 +1989,7 @@ body.menu-is-open {
   width: 48px;
   height: 45px;
   line-height: 45px;
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -2234,7 +2234,7 @@ body.menu-is-open {
 }
 
 .home-content h1 {
-  font-family: "Sylfaen", serif;  
+  font-family: "Nunito Sans", sans-serif;
   font-weight: 700;
   font-size: 10rem;
   line-height: 1;
@@ -2299,14 +2299,14 @@ body.menu-is-open {
 }
 
 .home-content__button .btn:not(.btn--primary) {
-  background-color: #a50034;
+  background-color: #00677f;
   
   color: #FFFFFF;
 }
 
 .home-content__button .btn:not(.btn--primary):hover,
 .home-content__button .btn:not(.btn--primary):focus {
-  background-color: #a50034a8;
+  background-color: #00677fa8;
   
 }
 
@@ -2326,7 +2326,7 @@ body.menu-is-open {
 }
 
 .home-content__scroll .scroll-link {
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -2358,7 +2358,7 @@ body.menu-is-open {
  * ------------------------------------------------------------------- */
 .home-social {
   list-style: none;
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif; 
   margin: 0;
   position: absolute;
   bottom: 3.6rem;
@@ -2855,7 +2855,7 @@ html.no-csstransitions .home-content__main {
   content: counter(ctr);
   counter-increment: ctr;
   display: block;
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-size: 2.1rem;
   font-weight: 700;
   text-align: center;
@@ -3044,7 +3044,7 @@ html.no-csstransitions .home-content__main {
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
-  background-zoom: linear-gradient(to top, #00677f 0%, transparent 98%); /* Degradado en la parte inferior */
+  background-image: linear-gradient(to top, rgba(0, 90, 200, 0.1) 0%, transparent 70%);
   background-size: 100% 100%; /* Asegura que el degradado cubra todo el fondo */
   background-position: center bottom; /* Centra el degradado en la parte inferior */
   background-repeat: no-repeat;
@@ -3081,7 +3081,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service__icon {
   float: left;
-  color: #214b97;
+  color: #fff5ef;
   font-size: 4rem;
   margin-top: -1.8rem;
 }
@@ -3127,7 +3127,7 @@ html.no-csstransitions .home-content__main {
 
 .item-service__icon {
   float: left;
-  color: #214b97;
+  color: #00677f;
   font-size: 4.5rem;
   margin-top: -1.8rem;
 }
@@ -3311,7 +3311,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__thumb a::after {
   content: "...";
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-size: 2.7rem;
   display: block;
   height: 30px;
@@ -3350,7 +3350,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__title {
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.286;
@@ -3362,7 +3362,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__cat {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif; 
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.714;
@@ -4253,7 +4253,7 @@ footer a {
   cursor: pointer;
   text-align: left;
   transition: background-color var(--transition-speed) ease;
-  font-family: "Sylfaen", serif;  
+  font-family: "Muller", sans-serif;
 }
 
 .accordion-item button:hover {
